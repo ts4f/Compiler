@@ -1,7 +1,20 @@
 # Compiler
 Three-stage compiler for a custom programming language named Starlet
 
-<img src="images/syntax0.jpg" width=500>
+## Front end
+
+The front end analyzes the source code to build an internal representation of the program, called the <a href="/wiki/Intermediate_representation" title="Intermediate representation">intermediate representation</a>.  
+
+## Back end
+
+The back end is responsible for the CPU architecture specific optimizations and for 
+<a href="/wiki/Code_generation_(compiler)" title="Code generation (compiler)">code generation</a>  
+
+# Starlet syntax
+
+To view syntax <a href="images/">Click here</a>
+
+
 # Authors
 [Panagiotis Tsiavos](https://github.com/PanosCS)  
 [Christos Tsigaras](https://github.com/christsig)
