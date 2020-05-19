@@ -1,0 +1,14 @@
+program fcase
+	declare a,b,c;
+
+	function Adder(in x)
+		return(x+1);
+	endfunction;
+
+	a:=0;
+
+	forcase
+		when (a>10): c:=a;
+		default: a:= Adder(in a) enddefault
+	endforcase
+endprogram

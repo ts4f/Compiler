@@ -1,0 +1,22 @@
+program px
+	declare a,b,c,d;
+
+	function P1(in x, inout y)
+		declare w,z;
+
+		y:=x+y;
+		w := x/y;
+
+		return(x*y)
+	endfunction
+
+	function P2(in x, inout y)
+
+		return(x*y)
+	endfunction
+
+	a:=100;
+	b:=200;
+	c:= P1(in b, inout a);
+	d:= P2(in a, inout b)
+endprogram

@@ -1,0 +1,21 @@
+program exams
+    declare c,a,b,t;
+
+    a:=1;
+
+    while(a+b<1 and b<5)
+        if(t=1) then
+            c:=2;
+        else
+            c:=0;
+        endif;
+
+        while(a<1)
+            if(a=2) then
+                while(b=1)
+                    c:=2;
+                endwhile
+            endif
+        endwhile
+    endwhile
+endprogram

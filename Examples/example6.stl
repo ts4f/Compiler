@@ -1,0 +1,16 @@
+program fincase
+	declare a,b,c;
+
+	function Subber(in x, in y)
+	    return (x-y)
+	endfunction;
+
+	a:=100;
+	b:=30;
+
+	incase
+	    when (a>b): a:= Subber(in a, in b)
+	    when (a<b): b:= Subber(in b, in a)
+	endincase
+
+endprogram

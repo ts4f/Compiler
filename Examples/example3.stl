@@ -1,0 +1,32 @@
+program example
+	declare a,b, d1;
+
+	function P1(in x, inout y)
+		declare  c,d ;
+
+		function P11(in w, inout z)
+			declare e ;
+
+			function P21(in x)
+				e:=x;
+				z:=w;
+				e:=P21(in a);
+				return(e)
+            endfunction
+
+			e:=z;
+			z:=w;
+			e:=P21(in c);
+			return(e)
+        	endfunction
+
+		b:=100;
+		c:=P11(in b,inout c);
+		y:=b+c;
+		return(0)
+    	endfunction
+
+	d1:=P1(in a,inout b);
+	return(0);
+endprogram
+

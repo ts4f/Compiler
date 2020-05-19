@@ -1,0 +1,45 @@
+program example2
+    declare x,y,z;
+
+    function p1(in x, inout z, inout v)
+        declare w;
+
+        function p2(inout z)
+            declare q;
+
+            function p3(inout a, inout b)
+                declare k;
+
+                if (v<>0) then
+                    v:=z+b;
+                    a:=1
+                else
+                    a:= v/b
+                endif;
+
+                k:=x;
+                return(k)
+            endfunction
+
+
+            q:=y+w;
+            z:=q*x;
+            v:=p3(inout q, inout v);
+            return(q);
+
+        endfunction
+
+        if (x<y) then
+            w:=x+y
+        else
+            w:= x*y
+        endif;
+
+        z:= p2(inout z);
+        return(w)
+    endfunction
+
+    x:=1;
+    y:=2;
+    z:= p1(in x+y, inout z, inout y)
+endprogram
